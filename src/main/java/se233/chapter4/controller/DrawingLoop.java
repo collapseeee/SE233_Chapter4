@@ -28,6 +28,10 @@ public class DrawingLoop implements Runnable {
             float time = System.currentTimeMillis();
             checkDrawCollision(gameStage.getGameCharacter());
             paint(gameStage.getGameCharacter());
+
+            checkDrawCollision(gameStage.getGameCharacter2());
+            paint(gameStage.getGameCharacter2());
+
             time = System.currentTimeMillis() - time;
             if (time < interval) {
                 try {
